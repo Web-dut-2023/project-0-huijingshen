@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.search-bar {
+  margin: 0.5rem 0;
+  border-radius: 20px;
+}
+
+.text-field {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.advanced-search-button {
+  background-color: #4285F4;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<p class="text-right">Go to <a href="index.html">Google Search</a></p>
+<p class="text-right">Go to <a href="sear2.html">Google picture Search</a></p>
+<div class="container">
+  <form action="https://www.google.com/search">
+    <label for="all-words">Find pages with... all these words:</label>
+    <input type="text" name="all-words" id="all-words" class="text-field">
+
+    <label for="exact-words">Find pages with... this exact word or phrase:</label>
+    <input type="text" name="exact-words" id="exact-words" class="text-field">
+
+    <label for="any-words">Find pages with... any of these words:</label>
+    <input type="text" name="any-words" id="any-words" class="text-field">
+
+    <label for="none-words">Find pages with... none of these words:</label>
+    <input type="text" name="none-words" id="none-words" class="text-field">
+
+    <input type="submit" value="Advanced Search" class="advanced-search-button">
+  </form>
+</div>
+</body>
+</html>
